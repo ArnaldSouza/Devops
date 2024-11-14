@@ -20,7 +20,7 @@ public class Cpf {
         this.Aluno_Cpf = Aluno_Cpf;
     }
 
-    public String getUserCpf() {
+    public String getAlunoCpf() {
         return Aluno_Cpf;
     }
 

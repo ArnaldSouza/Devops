@@ -21,7 +21,7 @@ public class Media {
         this.Aluno_media = Aluno_media;
     }
 
-    public Double getUserMedia() {
+    public Double getAlunoMedia() {
         return Aluno_media;
     }
     

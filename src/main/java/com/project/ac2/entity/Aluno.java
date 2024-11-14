@@ -1,4 +1,4 @@
-package com.project.ac2.entity;
+	package com.project.ac2.entity;
 
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
