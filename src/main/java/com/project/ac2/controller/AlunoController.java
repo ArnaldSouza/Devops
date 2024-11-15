@@ -10,13 +10,13 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/alunos")
+@RequestMapping("/api")
 public class AlunoController {
 	
 	@Autowired
 	private AlunoService alunoService;
 	
-	@GetMapping
+	@GetMapping("/alunos")
 	public List<AlunoDTO> getAlunos(){
 		return alunoService.getAllUsers();
 	}
