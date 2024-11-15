@@ -38,7 +38,7 @@ public class AlunoControllerTest {
 			List<AlunoDTO> mockAlunos = List.of(mockAluno);
 			Mockito.when(alunoService.getAllUsers()).thenReturn(mockAlunos);
 			
-			mockMvc.perform(MockMvcRequestBuilders.get("/alunos")
+			mockMvc.perform(MockMvcRequestBuilders.get("/api/alunos")
 			        .accept(MediaType.APPLICATION_JSON))
 			        .andExpect(status().isOk())
 			        .andExpect(jsonPath("$[0].nomeAluno").value("Joe"))
