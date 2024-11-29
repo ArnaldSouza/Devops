@@ -30,7 +30,7 @@ public class AlunoRepositoryTest {
 		//criando um novo Aluno com cpf e média válida
 		Aluno aluno = new Aluno();
 		aluno.setnomeAluno("Aluno");
-		aluno.setCpf(new Cpf("123.456.789-10"));
+		aluno.setCpf(new Cpf("123.456.789-09"));
 		aluno.setMedia(new Media(8.5));
 		
 		//salvando o usuário no banco de dados

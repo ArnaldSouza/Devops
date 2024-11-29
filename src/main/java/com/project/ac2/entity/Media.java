@@ -6,19 +6,26 @@ import lombok.Data;
 
 @Embeddable
 @Data
-public class Media {
+public final class Media {
 
     private Double Aluno_media;
     
-    protected Media() {}
-
+    public Media() {
+ 
+    }
+    
     public Media(Double Aluno_media) {
-        if (Aluno_media == null) {
-            throw new IllegalArgumentException("Média inválida");
-        }else if(Aluno_media < 0 || Aluno_media > 10){
-        	throw new IllegalArgumentException("A média deve estar entre 0 e 10");
+    	validarMedia(Aluno_media);
+    	this.Aluno_media = Aluno_media;
+    }
+    
+    public void validarMedia(Double Aluno_media) {
+    	if (Aluno_media == null) {
+            throw new IllegalArgumentException("Média inválida: valor não pode ser nulo");
         }
-        this.Aluno_media = Aluno_media;
+        if (Aluno_media < 0 || Aluno_media > 10) {
+            throw new IllegalArgumentException("A média deve estar entre 0 e 10");
+        }       
     }
 
     public Double getAlunoMedia() {

@@ -38,13 +38,13 @@ public class AlunoServiceTest {
 		Aluno aluno1 = new Aluno();
 		aluno1.setId(1L);
 		aluno1.setnomeAluno("Aluno teste 1");
-		aluno1.setCpf(new Cpf("123.456.789-10"));
+		aluno1.setCpf(new Cpf("123.456.789-09"));
 		aluno1.setMedia(new Media(10.0));
 		
 		Aluno aluno2 = new Aluno();
 		aluno2.setId(2L);
 		aluno2.setnomeAluno("Aluno teste 2");
-		aluno2.setCpf(new Cpf("109.876.543-21"));
+		aluno2.setCpf(new Cpf("397.705.138-57"));
 		aluno2.setMedia(new Media(0.0));
 		
 		when(alunoRepository.findAll()).thenReturn(Arrays.asList(aluno1, aluno2));
@@ -53,7 +53,7 @@ public class AlunoServiceTest {
 		
 		assertEquals(2, alunos.size());
 		assertEquals("Aluno teste 1", alunos.get(0).getnomeAluno());
-		assertEquals("123.456.789-10", alunos.get(0).getCpf());
+		assertEquals("123.456.789-09", alunos.get(0).getCpf());
 		assertEquals(10.0, alunos.get(0).getMedia());
 	}
 	
