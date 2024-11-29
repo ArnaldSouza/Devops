@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Embeddable
 @Data
-public class Media {
+public final class Media {
 
     private Double Aluno_media;
     
