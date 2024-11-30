@@ -18,6 +18,6 @@ public class AlunoController {
 	
 	@GetMapping("/alunos")
 	public List<AlunoDTO> getAlunos(){
-		return alunoService.getAllUsers();
+		return  alunoService.getAllUsers();
 	}
 }
