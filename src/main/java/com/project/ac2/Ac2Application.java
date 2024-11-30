@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@SpringBootApplication(scanBasePackages = {"com.project.ac2", "com.project.ac2.controller"})
+@SpringBootApplication
 @Controller
 public class Ac2Application {
 
